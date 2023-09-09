@@ -1,0 +1,37 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #333;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Màu sắc cho thông báo thắng */
+
+.win-message {
+    color: green;
+    font-weight: bold;
+}
+
+
+/* Màu sắc cho thông báo thua */
+
+.lose-message {
+    color: red;
+    font-weight: bold;
+}

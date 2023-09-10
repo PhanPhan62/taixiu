@@ -7,6 +7,9 @@ const taiButton = document.getElementById('taiButton');
 const xiuButton = document.getElementById('xiuButton');
 const betAmountInput = document.getElementById('betAmount');
 const resultDisplay = document.getElementById('result');
+const resultDisplay2 = document.getElementById('result2');
+const taitxt = document.getElementById('taitxt');
+const xiutxt = document.getElementById('xiutxt');
 
 // Xử lý khi nhấn nút "Tài"
 taiButton.addEventListener('click', () => {
@@ -39,17 +42,21 @@ function playGame(choice) {
         if ((choice === 'tai' && randomValue >= 11) || (choice === 'xiu' && randomValue <= 10)) {
             winMultiplier = 2;
             balance += betAmount * winMultiplier;
-            result = `Bạn đã thắng! Kết quả: ${randomValue}`;
-            resultDisplay.className = 'win-message';
+            result = `Thắng!`;
+            resultDisplay.className = 'win';
+            // taitxt.style = 'animation: zoomout 0.2s ease-in-out infinite alternate;'
+
         } else {
             balance -= betAmount;
-            result = `Bạn đã thua! Kết quả: ${randomValue}`;
-            resultDisplay.className = 'lose-message';
+            result = `Thua!`;
+            resultDisplay.className = 'loss';
+            // xiutxt.style = 'animation: zoomout 0.2s ease-in-out infinite alternate;'
         }
 
         // Cập nhật số tiền, kết quả, và mức cược
-        balanceDisplay.textContent = balance;
+        balanceDisplay.textContent = balance.toLocaleString("vi-VI");
         resultDisplay.textContent = result;
+        resultDisplay2.textContent = randomValue;
         betAmountInput.value = '';
         // Tải lại trang web hiện tại
         // location.reload();

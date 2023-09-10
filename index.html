@@ -9,13 +9,55 @@
 </head>
 
 <body>
-    <h1>Trò chơi Tài Xỉu</h1>
+
+
+    <div class="main">
+        <div id="dragon" class="dragon">
+            <p id="statustxt" class="statustxt">
+                <div id="result"></div><br>
+                <div id="result2" style="color: rgb(247, 66, 66);"></div>
+
+            </p>
+        </div>
+        <div class="khung">
+            <p class="tien" id="balance">1.000</p>
+        </div>
+        <div id="time" class="time"></div>
+        <p id="id" class="statustxt" style="position: absolute; opacity : 1; left: 180px;top: 130px; font-size: 17px"></p>
+
+        <div>
+            <div id="taitxt" class="tai"></div>
+            <div id="xiutxt" class="xiu"></div>
+        </div>
+        <p id="sumxiu" class="usertxt" style="position: absolute; left: 115px;top: 242px;"></p>
+        <p id="sumtai" class="usertxt" style="position: absolute; right: 130px;top: 242px;"></p>
+        <!-- <div id="dice1" class="dice dice1"></div>
+        <div id="dice2" class="dice dice2"></div>
+        <div id="dice3" class="dice dice3"></div> -->
+        <div></div>
+        <!-- <div class="user"></div>
+        <div class="user" style="left: 80px;"></div> -->
+
+        <button id="xiuButton" class="input">Xỉu</button>
+        <button id="taiButton" class="input" style="left: 525px;">Tài</button>
+        <!-- <input id="pullxiu" class="input" type="button">
+        <input id="pulltai" class="input" type="button" style="left: 525px;"> -->
+        <img src="" id="roll" style="position: absolute; left:300px; top: 190px; transition: 0.5s;opacity: 1; width: 180px" />
+        <p id="userxiu" class="usertxt" style="position: absolute; left: 115px;top: 352px;"></p>
+        <p id="usertai" class="usertxt" style="position: absolute; right: 180px;top: 352px;"></p>
+        <div class="txt">
+            <p class="statustxt">
+                <input type="number" id="betAmount" required placeholder="Nhập mức cược">
+            </p>
+        </div>
+    </div>
+    <!-- <h1>Trò chơi Tài Xỉu</h1>
     <p>Số tiền của bạn: <span id="balance">1000</span></p>
-    <p>Chọn Tài hoặc Xỉu:</p>
-    <button id="taiButton">Tài</button>
-    <button id="xiuButton">Xỉu</button>
-    <p>Mức cược: <input type="number" id="betAmount" value="1"></p>
-    <p>Kết quả: <span id="result"></span></p>
+    <p>Chọn Tài hoặc Xỉu:</p> -->
+    <!-- <button id="taiButton" class="input">Tài</button>
+    <button id="xiuButton" class="input">Xỉu</button> -->
+    <!-- <p>Mức cược: <input type="number" id="betAmount" value="1"></p> -->
+    <!-- <p>Kết quả: <span id="result"></span></p> -->
 
     <script src="script.js"></script>
 </body>
